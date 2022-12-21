@@ -1,3 +1,45 @@
+@keyframes btn-animation{
+    0%{
+        background-color:burlywood;
+    }
+    25%{
+        background-color: rgb(134, 116, 92);
+
+    }
+    50%{
+        background-color:burlywood;
+    }
+    75%{
+        background-color: rgb(134, 116, 92);
+
+    }
+    100%{
+        background-color:burlywood;
+    }
+}
+@keyframes subject-animation{
+    from{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+    to{
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+    }
+}
+@keyframes book-animation{
+    from{
+       width: 150px;
+       height: 200px;
+    }
+    to{
+        width: 200px;
+        height: 250px;
+        
+    }
+}
 /* contact us */
 .column{
     flex: 50%;
@@ -127,8 +169,6 @@ section h3{
     font-family:'Courier New', Courier, monospace;
 }
 .scroll-section{
-    /* overflow: auto;
-    white-space: nowrap; */
     text-align: center;
     display: flex;
     justify-content:space-around;
@@ -137,6 +177,13 @@ section h3{
     width: 100px;
     height: 100px;
     border-radius: 100px;
+}
+.scroll-section img:hover{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    animation-name: subject-animation;
+    animation-duration: 2s;
 }
 .scroll-section .subject-title{
     font-size: 18px;
@@ -151,6 +198,10 @@ section h3{
     font-family:'Courier New', Courier, monospace;
     color: rgb(134, 116, 92);
 }
+article h2{
+    color: rgb(134, 116, 92);
+    font-family:'Courier New', Courier, monospace;
+}
 .books{
     display: flex;
     justify-content: space-around;
@@ -158,6 +209,12 @@ section h3{
 .book-cover{
     width: 150px;
     height: 200px;
+}
+.book-cover:hover{
+    width: 200px;
+    height: 250px;
+    animation-name: book-animation;
+    animation-duration: 2s;
 }
 article .book-status{
     margin-top: 0px;
@@ -171,6 +228,8 @@ article .book-status{
     background-color:burlywood;
     border: none;
     border-radius: 3px;
+    animation-name: btn-animation;
+    animation-duration:  6s;
 }
 .not-available{
     font-size: 15px;
@@ -217,7 +276,7 @@ aside{
     float: right;
 }
 aside h3{
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(54, 50, 43);    
     border-bottom: 2px solid rgb(54, 50, 43);
 }
@@ -225,12 +284,6 @@ aside a, aside h4{
     margin-bottom: 0px;
     margin-top: 30px;
     color: rgb(54, 50, 43);    
-}
-aside img{
-    width: 350px;
-    height: 150px;
-    border-radius: 2px;
-    margin: 0px;
 }
 footer{
     padding: 10px;
