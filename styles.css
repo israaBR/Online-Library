@@ -4,6 +4,7 @@
 }
 .row{
     display: flex;
+    justify-content:space-around    ;
 }
 .contact-us-info{
     font-family:'Courier New', Courier, monospace;
@@ -71,7 +72,7 @@ header .log-reg{
 header .log-reg a{
     color: rgb(134, 116, 92);
 }
-header #logo{
+header .logo{
     width: 80px;
     height: 50px;
 }
@@ -122,19 +123,92 @@ nav button{
 }
 section h3{
     color: rgb(134, 116, 92);
+    font-size: 20px;
     font-family:'Courier New', Courier, monospace;
 }
-article h2{
-    margin-bottom: 0px;
+.scroll-section{
+    /* overflow: auto;
+    white-space: nowrap; */
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+}
+.scroll-section img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+.scroll-section .subject-title{
+    font-size: 18px;
+    font-weight: 700;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(54, 50, 43);
+}
+.scroll-section .books-number{
+    font-style: oblique;
+    font-size: 14px;
+    font-weight: 100;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(134, 116, 92);
+}
+.books{
+    display: flex;
+    justify-content: space-around;
+}
+.book-cover{
+    width: 150px;
+    height: 200px;
+}
+article .book-status{
+    margin-top: 0px;
+    width: 150px;
+    height: 40px;
+    font-family:'Courier New', Courier, monospace;
+}
+.available{
+    font-size: 20px;
+    color: black;
+    background-color:burlywood;
+    border: none;
+    border-radius: 3px;
+}
+.not-available{
+    font-size: 15px;
+    color: black;
+    background-color:rgb(199, 195, 195);
+    border: none;
+    border-radius: 3px;
+}
+.about-us h2{
+    margin-bottom: 5px;
+    color: rgb(134, 116, 92);
+    font-weight: 900;
+    font-family:'Courier New', Courier, monospace;
+}
+.about-us img{
+    float: left;
+    margin-left: 0px;
+    margin-right: 10px;
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+}
+.about-us #description{
+    margin-top: 10px;
+    text-align: left;
+    width: 80%;
+    font-weight: 900;
+    font-size: 18px;
     color: rgb(134, 116, 92);
     font-family:'Courier New', Courier, monospace;
 }
-article img{
-    float: left;
-    margin: 8px;
-    width: 400px;
-    height: 200px;
-    border-radius: 5px;
+.about-us p{
+    text-align: left;
+    width: 75%;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(54, 50, 43);
+    font-family:'Courier New', Courier, monospace;
 }
 aside{
     font-family:'Courier New', Courier, monospace;
@@ -161,10 +235,20 @@ aside img{
 footer{
     padding: 10px;
     text-align: center;
+    font-size: 15px;
     font-family:'Courier New', Courier, monospace;
     height: 200px;
     color: white;
     background-color: rgb(54, 50, 43);
+}
+.help, .useful-links, .follow-us{
+    margin-top: 2%;
+    padding: 0%;
+    text-align:left;
+    width: 20%;
+} 
+.follow-us{
+    text-align:center;
 }
 footer img{
     width: 20px;
@@ -172,9 +256,24 @@ footer img{
     margin: 5px;
     text-decoration: none;
 }
+footer label{
+    font-size: 18px;
+    font-weight: 900;
+    color: burlywood;
+}
+footer a{
+    color: white;
+}
 a{
     text-decoration: none;
 }
+ul{
+    padding: 0%;
+    margin: 2%;
+    list-style: none;
+    text-align: left;
+}
+
 
 /* register */
 #avatar-canvas{
@@ -183,20 +282,15 @@ a{
     width: 100px;
     height: 100px;
 }
-#register-form input,#register-form button{
-    margin: 10px;
-    display: block;
-}
 
 /* location */
 .location{
     height: 100%;
-    margin: 20px;
 }
 
 #map-div {
     border-radius: 5px;
-    margin: 20px; 
+    margin: auto;
     width: 700px;
     height: 500px;
 }
