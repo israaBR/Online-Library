@@ -1,0 +1,199 @@
+/* contact us */
+.column{
+    flex: 50%;
+}
+.row{
+    display: flex;
+}
+.contact-us-info{
+    font-family:'Courier New', Courier, monospace;
+    color: white;   
+    background-color: rgb(134, 116, 92);
+    height: 350px;
+    margin: 0px;
+    padding:10px;
+    text-align: justify;
+}
+.contact-us-form{
+    background-color: burlywood;
+    height: 350px;
+    padding: 10px;
+    margin: px;
+}
+.contact-us-form label{
+    font-size: 18px;
+    font-family:'Courier New', Courier, monospace;
+    display: block;
+    margin: 3px;
+    color: rgb(54, 50, 43);   
+}
+.contact-us-form input, form textarea{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    border-bottom: 2px;
+    color: rgb(134, 116, 92);
+    background-color: rgb(255, 255, 255);
+    font-family:'Courier New', Courier, monospace;
+}
+.contact-us-form textarea{
+    width: 250px;
+    height: 65px;
+}
+.contact-us-form button{
+    margin: 5px;
+    display: block;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: rgb(54, 50, 43);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+/* index */
+header{
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-align: center;
+}
+header .log-reg{
+    text-align:end;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+header .log-reg a{
+    color: rgb(134, 116, 92);
+}
+header #logo{
+    width: 80px;
+    height: 50px;
+}
+header h1{
+    color: rgb(54, 50, 43);
+    display: inline;
+}
+nav{
+    background-color:  rgb(134, 116, 92);
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align:center;
+}
+nav a{
+    color: white;    
+    padding: 5px;
+    margin: 5px;
+}
+nav input{
+    width: 450px;
+    height: 45px;
+    color: rgb(134, 116, 92);
+    background-color: white;
+    border-color: burlywood;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family:'Courier New', Courier, monospace;
+    padding: 5px;
+}
+nav button{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    background-color: burlywood;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding: 5px;
+}
+.section-article{
+    width: 1500px;
+    margin: 20px;
+    text-align: justify;
+}
+section h3{
+    color: rgb(134, 116, 92);
+    font-family:'Courier New', Courier, monospace;
+}
+article h2{
+    margin-bottom: 0px;
+    color: rgb(134, 116, 92);
+    font-family:'Courier New', Courier, monospace;
+}
+article img{
+    float: left;
+    margin: 8px;
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+}
+aside{
+    font-family:'Courier New', Courier, monospace;
+    width: 500px;
+    margin: 20px;
+    float: right;
+}
+aside h3{
+    font-size: 20px;
+    color: rgb(54, 50, 43);    
+    border-bottom: 2px solid rgb(54, 50, 43);
+}
+aside a, aside h4{
+    margin-bottom: 0px;
+    margin-top: 30px;
+    color: rgb(54, 50, 43);    
+}
+aside img{
+    width: 350px;
+    height: 150px;
+    border-radius: 2px;
+    margin: 0px;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    height: 200px;
+    color: white;
+    background-color: rgb(54, 50, 43);
+}
+footer img{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* register */
+#avatar-canvas{
+    border: 2px solid black;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+#register-form input,#register-form button{
+    margin: 10px;
+    display: block;
+}
+
+/* location */
+.location{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 100%;
+}
