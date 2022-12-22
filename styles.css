@@ -1,19 +1,24 @@
 @keyframes btn-animation{
     0%{
+        color: rgb(54, 50, 43);  
         background-color:burlywood;
     }
     25%{
-        background-color: rgb(134, 116, 92);
+        color: burlywood;
+        background-color: rgb(54, 50, 43);   
 
     }
     50%{
+        color: rgb(54, 50, 43);  
         background-color:burlywood;
     }
     75%{
-        background-color: rgb(134, 116, 92);
+        color: burlywood;
+        background-color: rgb(54, 50, 43);   
 
     }
     100%{
+        color: rgb(54, 50, 43);  
         background-color:burlywood;
     }
 }
@@ -98,21 +103,12 @@
 /* index */
 header{
     background-color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 0.5%;
     font-family:'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-size: 200%;
     text-align: center;
-}
-header .log-reg{
-    text-align:end;
-    font-size: 18px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-header .log-reg a{
-    color: rgb(134, 116, 92);
 }
 header .logo{
     width: 80px;
@@ -123,13 +119,27 @@ header h1{
     display: inline;
 }
 nav{
-    background-color:  rgb(134, 116, 92);
-    height: 40px;
+    background-color: rgb(134, 116, 92);
+    width: auto;
+    height: auto;
     font-size: 20px;
     padding: 10px;
     margin-left: 20px;
     margin-right: 20px;
     text-align:center;
+}
+.pages{
+    margin: 0.5%;
+    float: left;
+}
+.login-register{
+    margin: 0.5%;
+    float: right;
+    align-content: right;
+}
+.search{
+    margin: 0.5%;
+    display: block;
 }
 nav a{
     color: white;    
@@ -171,7 +181,11 @@ section h3{
 .scroll-section{
     text-align: center;
     display: flex;
-    justify-content:space-around;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+.subject{
+    margin: 1%;
 }
 .scroll-section img{
     width: 100px;
@@ -204,7 +218,11 @@ article h2{
 }
 .books{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content:flex-start
+}
+.book-cover-btn{
+    margin: 1%;
 }
 .book-cover{
     width: 150px;
@@ -223,8 +241,8 @@ article .book-status{
     font-family:'Courier New', Courier, monospace;
 }
 .available{
-    font-size: 20px;
-    color: black;
+    font-size: 25px;
+    color: rgb(54, 50, 43);  
     background-color:burlywood;
     border: none;
     border-radius: 3px;
@@ -232,7 +250,7 @@ article .book-status{
     animation-duration:  6s;
 }
 .not-available{
-    font-size: 15px;
+    font-size: 17px;
     color: black;
     background-color:rgb(199, 195, 195);
     border: none;
@@ -290,12 +308,14 @@ footer{
     text-align: center;
     font-size: 15px;
     font-family:'Courier New', Courier, monospace;
-    height: 200px;
+    width: 100;
+    height: auto;
     color: white;
     background-color: rgb(54, 50, 43);
 }
 .help, .useful-links, .follow-us{
     margin-top: 2%;
+    margin-bottom: 2%;
     padding: 0%;
     text-align:left;
     width: 20%;
@@ -317,6 +337,14 @@ footer label{
 footer a{
     color: white;
 }
+.short-description{
+    background-color: white;
+    color: rgb(54, 50, 43);
+    text-align: center;
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 800;
+}
 a{
     text-decoration: none;
 }
@@ -325,6 +353,32 @@ ul{
     margin: 2%;
     list-style: none;
     text-align: left;
+}
+/* Responsiveness */
+
+@media only screen and (min-width: 1200px) {
+    .subject{
+        flex: 10%;
+    }
+    .book-cover-btn{
+        flex: 15%;
+    }   
+}
+@media only screen and (min-width: 700px)and(max-width: 1199px) {
+    .subject{
+        flex: 30%;
+    }    
+    .book-cover-btn{
+        flex: 30%;
+    }
+}
+@media only screen and (min-width: 300px)and(max-width: 699px) {
+    .subject{
+        flex: 50%;
+    }
+    .book-cover-btn{
+        flex: 50%;
+    }
 }
 
 

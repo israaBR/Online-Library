@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>Online Library</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,59 +13,64 @@
       <h1>Online Library</h1>
     </header>
     <nav>
-      <a href="home.html">Home</a>
-      <!-- <a href="trending.html">Trending</a> -->
-      <a href="books.html">Books</a>
-      <a href="authors.html">Authors</a>
-      <a href="collections.html">Collections</a>
-      <a href="contribute.html">Contribute</a>
-      <a href="/contactUs.html">Contact Us</a>
-      <input type="search" placeholder="search by book, author or anything.." name="search"/>
-      <button type="button">GO</button>      
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
+      <div class="pages">
+        <a href="home.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="authors.html">Authors</a>
+        <a href="collections.html">Collections</a>
+        <a href="contribute.html">Contribute</a>
+        <a href="/contactUs.html">Contact Us</a>
+      </div>
+      <div class="login-register">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+      <div class="search">
+        <input type="search" placeholder="search by book, author or anything.." name="search"/>
+        <button type="button">GO</button>   
+      </div>
     </nav>
     <div class="row">
       <div class="section-article">
         <section>
           <h3>Browse by Subject</h3>
           <div class="scroll-section">
-            <div>
+            <div class="subject">
               <a href="books.html">
                 <div><img src="/images/art.png"/></div>
                 <p class="subject-title">Art</p>
                 <p class="books-number">11,000 Books</p>
               </a>
             </div>
-            <div>
+            <div class="subject">
               <a href="books.html">
                 <div><img src="/images/scifi.jpg"/></div>
                 <p class="subject-title">Science Fiction</p>
                 <p class="books-number">10,500 Books</p>
               </a>
             </div>
-            <div>
+            <div class="subject">
               <a href="books.html">
                 <div><img src="/images/fantasy.png"/></div>
                 <p class="subject-title">Fantasy</p>
                 <p class="books-number">9,380 Books</p>
               </a>
             </div>
-            <div>
+            <div class="subject">
               <a href="books.html">
                 <div><img src="/images/biographies.png"/></div>
                 <p class="subject-title">Biographies</p>
                 <p class="books-number">10,120 Books</p>
               </a>
             </div>
-            <div>
+            <div class="subject">
               <a href="books.html">
                 <div><img src="/images/history.png"/></div>
                 <p class="subject-title">History</p>
                 <p class="books-number">8,500 Books</p>
               </a>
             </div>
-            <div>
+            <div class="subject">
               <a href="books.html">
                 <div><img src="/images/science.png"/></div>
                 <p class="subject-title">Science</p>
@@ -77,31 +82,31 @@
         <article>
           <h2>Trending Books</h2>
           <div class="books">
-            <div>
+            <div class="book-cover-btn">
               <a>
                 <div><img class="book-cover" href="book.html" src="https://m.media-amazon.com/images/I/41xShlnTZTL._AC_SY780_.jpg"/></div>
               </a>
               <div><button type="button" class="book-status available">Borrow</button></div>
           </div>
-          <div>
+          <div class="book-cover-btn">
             <a>
               <div><img class="book-cover" href="book.html" src="https://m.media-amazon.com/images/I/41T5H8u7fUL._AC_SY780_.jpg"/></div>
             </a>
             <div><button type="button" class="book-status not-available">Join Waiting list</button></div>
         </div>
-        <div>
+        <div class="book-cover-btn">
           <a>
             <div><img class="book-cover" href="book.html" src="https://m.media-amazon.com/images/I/51j631YG0IL._AC_SY780_.jpg"/></div>
           </a>
           <div><button type="button" class="book-status available">Borrow</button></div>
         </div>
-        <div>
+        <div class="book-cover-btn">
           <a>
             <div><img class="book-cover" href="book.html" src="https://m.media-amazon.com/images/I/61y04z8SKEL._AC_SY780_.jpg"/></div>
           </a>
           <div><button type="button" class="book-status available">Borrow</button></div>
       </div>
-      <div>
+      <div class="book-cover-btn">
         <a>
           <div><img class="book-cover" href="book.html" src="https://m.media-amazon.com/images/I/91LUbAcpACL.jpg"/></div>
         </a>
@@ -112,31 +117,31 @@
        <article>
          <h2>Books of the Day</h2>
           <div class="books">
-            <div>
+            <div class="book-cover-btn">
               <a>
                 <div><img class="book-cover" href="book.html" src="https://m.media-amazon.com/images/I/512RYvvDVJL.jpg"/></div>
               </a>
               <div><button type="button" class="book-status available">Borrow</button></div>
           </div>
-          <div>
+          <div class="book-cover-btn">
             <a>
               <div><img class="book-cover" href="book.html" src="https://m.media-amazon.com/images/I/51vfuNNWMTS.jpg"/></div>
             </a>
             <div><button type="button" class="book-status not-available">Join Waiting list</button></div>
         </div>
-        <div>
+        <div class="book-cover-btn">
           <a>
             <div><img class="book-cover" href="book.html" src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982146702/the-great-gatsby-9781982146702_hr.jpg"/></div>
           </a>
           <div><button type="button" class="book-status available">Borrow</button></div>
         </div>
-        <div>
+        <div class="book-cover-btn">
           <a>
             <div><img class="book-cover" href="book.html" src="https://m.media-amazon.com/images/I/91l1EHFs8dL.jpg"/></div>
           </a>
           <div><button type="button" class="book-status not-available">Join Waiting list</button></div>
       </div>
-      <div>
+      <div class="book-cover-btn">
         <a>
           <div><img class="book-cover" href="book.html" src="https://m.media-amazon.com/images/I/91Q5dCjc2KL.jpg"/></div>
         </a>
